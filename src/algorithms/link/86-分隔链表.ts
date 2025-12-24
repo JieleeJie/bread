@@ -1,11 +1,13 @@
-class ListNode {
-  val: number;
-  next: ListNode | null;
-  constructor(val?: number, next?: ListNode | null) {
-    this.val = val === undefined ? 0 : val;
-    this.next = next === undefined ? null : next;
-  }
-}
+// class ListNode {
+//   val: number;
+//   next: ListNode | null;
+//   constructor(val?: number, next?: ListNode | null) {
+//     this.val = val === undefined ? 0 : val;
+//     this.next = next === undefined ? null : next;
+//   }
+// }
+
+import { ListNode } from './ListNode';
 
 function partition(head: ListNode | null, x: number): ListNode | null {
   // 存放小于 x 的链表的虚拟头结点
