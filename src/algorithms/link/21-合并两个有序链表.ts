@@ -1,5 +1,7 @@
 import { ListNode } from './ListNode';
 
+// 比较 p1 和 p2 两个指针，将值较小的的节点接到 p 指针
+
 function mergeTwoLists(
   list1: ListNode | null,
   list2: ListNode | null
