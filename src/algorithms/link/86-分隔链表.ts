@@ -9,8 +9,10 @@
 
 import { ListNode } from './ListNode';
 
-// 把原链表分成两个小链表，一个链表中的元素大小都小于 x，另一个链表中的元素都大于等于 x，最后再把这两条链表接到一起，
-
+/**
+ * https://leetcode.cn/problems/partition-list/description/
+ * 把原链表分成两个小链表，一个链表中的元素大小都小于 x，另一个链表中的元素都大于等于 x，最后再把这两条链表接到一起，
+ */
 function partition(head: ListNode | null, x: number): ListNode | null {
   // 存放小于 x 的链表的虚拟头结点
   const dummy1 = new ListNode(-1);
