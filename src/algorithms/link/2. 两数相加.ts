@@ -4,6 +4,7 @@ import { ListNode } from './ListNode';
  * https://leetcode.cn/problems/add-two-numbers/description/
  * 判断不能使用 while (pointA && pointB)。因为需要考虑最后一个节点有进位的情况，如5+6
  * 所以使用 while (pointA || pointB)； 当l1链表遍历完之后，l2链表还有值的时候，使用 0 充当 l1 链表的值
+ * 需要处理遍历完以后 carry 还存在值的情况
  */
 function addTwoNumbers(l1: ListNode | null, l2: ListNode | null): ListNode | null {
   let pointA = l1;
