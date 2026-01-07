@@ -1,0 +1,21 @@
+/**
+ * https://leetcode.cn/problems/find-pivot-index/description/
+ * 先计算总和，然后遍历数组，左边和为每次加上当前元素，右边和为总和减去当前元素。当左边和等于右边和时，返回当前下标。
+ * 注意 右边和要先减去当前元素，再判断是否相等，然后左边和再相加
+ * 因为中心下标是 该下标所指的元素，其左侧所有元素相加的和等于右侧所有元素相加的和, 不包含该元素。不同于数组左边元素的和等于右边元素的和，这种情况下是不包含该元素的
+ */
+function pivotIndex(nums: number[]): number {
+  let rightSum = nums.reduce((a, b) => a + b, 0);
+  let leftSum = 0;
+  for (let i = 0; i < nums.length; i++) {
+    const ele = nums[i];
+    rightSum -= ele;
+
+    if (leftSum === rightSum) {
+      return i;
+    }
+    leftSum += ele;
+  }
+
+  return -1;
+}
