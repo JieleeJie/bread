@@ -1,0 +1,25 @@
+{
+  // 保存时自动格式化
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // 保存时自动修复错误
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit",
+    "source.sortImports": "explicit"
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "html",
+    "vue",
+    "markdown",
+    "json",
+    "jsonc"
+  ],
+  "prettier.bracketSameLine": true,
+  "prettier.quoteProps": "consistent",
+  "npm.packageManager": "pnpm"
+}
