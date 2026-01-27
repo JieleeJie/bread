@@ -1,5 +1,5 @@
 /**
- * 非常经典，但过于复杂，体会思想即可。
+ * 非常经典，但过于复杂，体会思想即可。https://leetcode.cn/problems/minimum-window-substring/
  * 解题参考：
  * 1. https://labuladong.online/zh/algo/essential-technique/sliding-window-framework/#%E4%B8%80%E6%9C%80%E5%B0%8F%E8%A6%86%E7%9B%96%E5%AD%90%E4%B8%B2
  * 2. https://leetcode.cn/problems/minimum-window-substring/solutions/2713911/liang-chong-fang-fa-cong-o52mn-dao-omnfu-3ezz/
@@ -13,7 +13,7 @@ function minWindow(s: string, t: string): string {
   let shortestStrLength = Number.MAX_SAFE_INTEGER;
   // 一个哈希表 cntS，用来统计 s 子串中每个字母的出现次数。
   const cntS = new Map<string, number>();
-  //  一个哈希表 cntT 统计 t 中每个字母的出现次数。
+  //  一个哈希表 cntT 统计 t 中每个字母的出现次数。因为可能有重复的字符
   const cntT = new Map<string, number>();
   for (const element of t) {
     cntT.set(element, (cntT.get(element) || 0) + 1);
