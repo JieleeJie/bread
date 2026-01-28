@@ -1,3 +1,8 @@
+/**
+ * https://leetcode.cn/problems/find-all-anagrams-in-a-string/description/
+ * 1.  缩小窗口的时机是 窗口大小 大于等于 p.length()
+ * 2.  判断是否找到了满足条件的子串的条件是 eligible === cntP.size
+ */
 function findAnagrams(s: string, p: string): number[] {
   // 快慢指针
   let slow = 0;
