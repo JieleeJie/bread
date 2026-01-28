@@ -25,8 +25,9 @@ function checkInclusion(s1: string, s2: string): boolean {
       }
     }
     fast++;
-    // 缩小窗口的时机是窗口大小 大于 s1.length()
-    while (fast - slow >= s1.length) {
+    // 缩小窗口的时机是窗口大小 大于等于 s1.length()
+    // 维护的是一个定长的窗口，窗口长度为 s1.length()。因为定长窗口每次向前滑动时只会移出一个字符，所以可改用 if
+    if (fast - slow >= s1.length) {
       if (valid === cntS1.size) {
         return true;
       }
