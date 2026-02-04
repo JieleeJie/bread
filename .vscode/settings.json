@@ -21,5 +21,6 @@
   ],
   "prettier.bracketSameLine": true,
   "prettier.quoteProps": "consistent",
-  "npm.packageManager": "pnpm"
+  "npm.packageManager": "pnpm",
+  "cSpell.words": ["nums"]
 }

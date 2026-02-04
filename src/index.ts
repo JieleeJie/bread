@@ -8,10 +8,10 @@ import { testTwoSum } from './algorithms/two-sum';
 function main(): void {
   console.log('🚀 欢迎使用 LeetCode 算法练习项目！');
   console.log('=====================================\n');
-  
+
   // 运行两数之和测试
   testTwoSum();
-  
+
   console.log('\n✅ 所有测试完成！');
 }
 

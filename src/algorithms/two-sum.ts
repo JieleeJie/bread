@@ -61,9 +61,7 @@ function testTwoSum(): void {
     const result2 = twoSum(testCase.nums, testCase.target);
 
     console.log(`测试用例 ${index + 1}:`);
-    console.log(
-      `输入: nums = [${testCase.nums.join(', ')}], target = ${testCase.target}`
-    );
+    console.log(`输入: nums = [${testCase.nums.join(', ')}], target = ${testCase.target}`);
     console.log(`暴力解法结果: [${result1.join(', ')}]`);
     console.log(`哈希表解法结果: [${result2.join(', ')}]`);
     console.log(`期望结果: [${testCase.expected.join(', ')}]`);
