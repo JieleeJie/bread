@@ -5,7 +5,7 @@
  */
 function threeSum(nums: number[]): number[][] {
   nums.sort((a, b) => a - b);
-  const res = [];
+  const res: number[][] = [];
   for (let i = 0; i < nums.length - 2; i++) {
     const element = nums[i];
     // 出现相等元素则跳过 避免出现重复的三元组
@@ -16,7 +16,7 @@ function threeSum(nums: number[]): number[][] {
     let j = i + 1;
     let k = nums.length - 1;
     while (j < k) {
-      const sum = nums[i] + nums[j] + nums[k];
+      const sum = nums[i]! + nums[j]! + nums[k]!;
       // 因为已经排序过了，如果 sum > 0, 则 k--，否则 j++
       if (sum > 0) {
         k--;
@@ -24,7 +24,7 @@ function threeSum(nums: number[]): number[][] {
         j++;
       } else {
         // 满足条件 则添加三元组
-        res.push([nums[i], nums[j], nums[k]]);
+        res.push([nums[i]!, nums[j]!, nums[k]!]);
         // 因为不能出现重复三元组,所以 j++ 同时 k-- 同时去重
         j++;
         while (j < k && nums[j] === nums[j - 1]) {
