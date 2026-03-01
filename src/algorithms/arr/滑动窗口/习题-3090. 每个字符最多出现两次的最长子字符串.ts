@@ -1,6 +1,6 @@
 /**
  * https://leetcode.cn/problems/maximum-length-substring-with-two-occurrences/description/
- * 通讲解3，修改一下判断条件
+ * 同讲解3，修改一下判断条件
  */
 function maximumLengthSubstring(s: string): number {
   let answer = 0;
