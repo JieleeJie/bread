@@ -11,4 +11,5 @@ function twoSum(nums: number[], target: number): number[] {
     }
     map.set(element, i);
   }
+  return [];
 }
