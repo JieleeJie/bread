@@ -1,3 +1,8 @@
+/**
+ * https://leetcode.cn/problems/product-of-array-except-self/
+ * @param nums
+ * @returns
+ */
 function productExceptSelf(nums: number[]): number[] {
   const numsLen = nums.length;
   const prefix = Array(numsLen).fill(1);
