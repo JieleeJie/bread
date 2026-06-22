@@ -17,6 +17,6 @@ function lowestCommonAncestor(root: TreeNode | null, p: TreeNode | null, q: Tree
   }
   // 这儿有几种情况
   // 1. 当前root节点是 p or q，
-  // 2. p,q 再 当前root节点 的左右两侧
+  // 2. p,q 在 当前root节点 的左右两侧，那 root 节点就是最近公共祖先
   return root;
 }
