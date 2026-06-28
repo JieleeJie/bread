@@ -23,3 +23,21 @@ function rightSideView(root: TreeNode | null): number[] {
   func(root, 0);
   return ans;
 }
+
+function rightSideView(root: TreeNode | null): number[] {
+  const answer: number[] = [];
+
+  const func = (node: TreeNode | null, depth: number) => {
+    if (node === null) {
+      return;
+    }
+    if (depth === answer.length) {
+      answer.push(node.val);
+    }
+    depth++;
+    func(node.right, depth);
+    func(node.left, depth);
+  };
+  func(root, 0);
+  return answer;
+}

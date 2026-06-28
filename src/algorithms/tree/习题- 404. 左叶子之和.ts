@@ -6,7 +6,7 @@ import TreeNode from '../../TreeNode';
 function sumOfLeftLeaves(root: TreeNode | null): number {
   let answer = 0;
 
-  function dep(node: TreeNode | null, depth?: number) {
+  function dep(node: TreeNode | null) {
     if (!node) {
       return;
     }
