@@ -5,7 +5,7 @@
  * @param nums
  */
 
-// 模板1
+// 模板1 - 从输入的角度，要么选，要么不选
 function subsets(nums: number[]): number[][] {
   const answer: number[][] = [];
   // 注意与 17 题的区别：如果 path 初始化成固定长度就不需要 pop。如果初始化成空list就需要pop
@@ -35,7 +35,7 @@ function subsets(nums: number[]): number[][] {
   return answer;
 }
 
-// 模板2
+// 模板2 - 从答案的视角，每次必须选一个数
 function subsets(nums: number[]): number[][] {
   const answer: number[][] = [];
   const path: number[] = [];
